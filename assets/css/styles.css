@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(8, 224, 188);
+    color: rgb(1, 13, 51);
+    }
+#redes{
+    text-align: center;
+    margin: auto;
+    }
+
+ul li {
+    list-style-type: none;
+    margin-left: -7%;
+}
+
+.imgPerfil {
+    border-radius: 100%;
+    border: 10px solid rgb(1, 18, 44) ;
+    }
+
+.banner {
+justify-content:start;
+display: flex;
+}
+
+.nombrePerfil{
+    font-size: 2rem ;
+    color: rgb(3, 43, 104);
+}
+
+.mapa {
+    padding: 10% ;
+
+}
