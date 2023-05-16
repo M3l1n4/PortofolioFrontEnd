@@ -1,187 +1,378 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/94436ee176.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-
+    <meta charset="utf-8">
     <title>Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    </head>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-    <!---Sección NavBar -->
-    <section id="navBar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3" href="#"> <img id="logo" src="img/argentina programa.png"></a>
+        
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-            <ul class="list-group list-group-horizontal">
-                <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
-                <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
-              </ul>
-
-            <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#loginModal"> Iniciar Sesión</button>
-
-              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#logout">Salir</button>
-
-          </div>
-        </div>
-      </nav>
-    </section>
-    <body>
-
-    <!-- Sección redes -->
-   <section id="redes"> 
-    <h2>Redes</h2>
-    <ul>
-        <li> <a href="https://www.linkedin.com/in/melina-siri-596567268/" target="_blank"> Linkedin </a></li>
-        <li> <a href="https://github.com/M3l1n4" target="_blank"> Github </a></li>
-    
-    </ul>
-
-   </section>
-   <!-- Sección sobre mi -->
-   
-   <section id="Sobre mi">
-    <h2> Sobre mi </h2>
-    <div class="banner">
-        <a><img class="imgPerfil" src="assets/img/Foto.jpg" alt="Melina Siri" title="Melina Siri"></a> 
-        </div>
-
-        <div>
-
-        <h1 class="nombrePerfil"> <strong> Melina Siri</strong></h1> 
-        
-        <h6>Analista programador</h6>
-        
-    </div>
-    </section>
-
-    <!-- Educación -->
-    <section id="Edcuación">
-        <h2> <strong>Educación</strong></h2>
-        <h4>Educación primaria </h4>
-        <p> Escuela Primaria "Cincuentenario: N° 978</p>
-        <h4>Educación secundaria </h4>
-        <p>Escuela de Enseñanza Media N°210 "José Ingenieros"</p>
-        <h4>Educación Superior</h4>
-        <P>Instituto de Estudios Superiores de Buenos Aires. Cursando la carrera: Técnico Analista en Sistemas</p>
-    
-        </section>
-
-    <!-- Experiencia -->
-    <section id="Experiencia">
-    <h2> <strong>Experiencia Laboral</strong> </h2>
-
-    <p>Trabajo en una empresa la cual esta especializada en la elavoración y venta de plantas de tratamientos de efluentes</p>
-    <p> <i> Trabajo en una empresa la cual esta especializada en la elavoración y venta de plantas de tratamientos de efluentes</i> </p>
-    </section>
-
-    
-
-    <!-- Habilidades -->
-    <section>
-    <h2> <strong>Habilidades</strong></h2>
-    </section>
-
-    <!-- Hobbies -->
-    <section> 
-    <h2>  <strong>Hobbies</strong> <h2> 
-    </section>
-
-    <!-- Contacto -->
-    <section> 
-    <h2>  <strong>Ubicación</strong> <h2>
-
-    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d108707.75905752485!2d-60.67663718715819!3d-31.630633892653485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684189079511!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <br>
-    <h5>
-    <label for="">Usuario</label>
-    <input type="text" placeholder="Nombre de usuario">
-
-    <label for="">Contraseña</label>
-    <input type="password" placeholder="Contraseña">
-
-    <button type="submit"> Enviar</button>
-    </h5>
-    </section>
-
-    <!-- Modal -->
-
-    <!-- Modal Login -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#inicio" class="nav-item nav-link active">Inicio</a>
+                <a href="#sobreMi" class="nav-item nav-link">Sobre mi</a>
+                <a href="#calificaciones" class="nav-item nav-link">Eduación</a>
+                <a href="#skill" class="nav-item nav-link">Habilidades</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleFecha" class="form-label">Fecha</label>
-            <input type="date" class="form-control" id="exampleFecha">
-          </div>
             
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal"> Iniciar Sesión</button>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
 
 
-
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="submit" class="btn btn-primary">Ingresar</button>
-        
-      </div>
-    </form>
-
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    <!-- Video Modal End -->
 
-    <!--JavaScrip Bundle with Popper Footer-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-    </body>
-    </html>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="inicio" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/Foto.jpg" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">Me llamo</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Melina Siri</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Soy Analista Programador</div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="sobreMi">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Sobre Mi</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Sobre Mi</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/Foto.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Analista Programador</h3>
+                    <p>Soy estudiante de la carrera Técnico Analista en Sistemas,del Instituto de Estudios Superiores de Buenos Aires.</p>
+                    <p>Me considero una persona responsable, con capacidad de adaptación y aprendizaje, con ganas de crecer profesionalmente y aportar mis conocimientos y experiencias en el área de sistemas.</p>
+                    <p>Me gusta trabajar en equipo, soy proactiva y me gusta aprender cosas nuevas.</p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Melina Siri</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Fecha de nacimiento: <span class="text-secondary">17 de Febrero de 1989</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Teléfono: <span class="text-secondary">+549 3401 440898</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">melinasiri@hotmail.com</span></h6></div>
+                       
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="calificaciones">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Educación </h1>
+                <h1 class="position-absolute text-uppercase text-primary">& Experiencia Laboral</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Mi Educación</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Técnico Analista en Sistemas</h5>
+                            <p class="mb-2"><strong>ESBA</strong> | <small>2022 - 2023</small></p>
+                            </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Analista Programador</h5>
+                            <p class="mb-2"><strong>ESBA</strong> | <small> Marzo del 2022 - Diciembre del 2022</small></p>
+                            
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Educación Secundaria</h5>
+                            <p class="mb-2"><strong>Escuela de Enseñanza Media N° 210 "José Ingenieros"</strong> | <small>2002 - 2006</small></p>
+                            
+                        </div>
+
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Educación Primaria</h5>
+                            <p class="mb-2"><strong>Escuela Primaria Cincuentenario N° 978 </strong> | <small>1995 - 2001</small></p>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Experiencia Laboral</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Andministrativa</h5>
+                            <p class="mb-2"><strong>Ingeniría Siri Consultora S.A.</strong> | <small>2020 - Actualidad</small></p>
+                            </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Secretaria</h5>
+                            <p class="mb-2"><strong>Centro Médico de La Familia</strong> | <small>2016 - 2019</small></p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Inicio de Habilidades -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Habilidades</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Mis Habilidades</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">HTML</h6>
+                            <h6 class="font-weight-bold">50%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">CSS</h6>
+                            <h6 class="font-weight-bold">50%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">PHP</h6>
+                            <h6 class="font-weight-bold">30%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-md-6">
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Javascript</h6>
+                            <h6 class="font-weight-bold">20%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">Angular JS</h6>
+                            <h6 class="font-weight-bold">10%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="skill mb-4">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="font-weight-bold">C++</h6>
+                            <h6 class="font-weight-bold">85%</h6>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de Habilidades -->
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contacto</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Contactame</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form text-center">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="nombre" placeholder="Nombre"
+                                        required="required" data-validation-required-message="Por favor ingrese su nombre" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Email"
+                                        required="required" data-validation-required-message="Por favor ingrese su email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Asunto"
+                                    required="required" data-validation-required-message="Por favor ingrese su asunto" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                    required="required"
+                                    data-validation-required-message="Por favor ingrese su mensaje"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Enviar mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-brands fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"> </i></a>
+                
+            </div>
+           <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Melina Siri</a>. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+          
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-primary">Ingresar</button>
+              
+            </div>
+          </form>
+      
+          </div>
+        </div>
+      </div>
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+
+    
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
