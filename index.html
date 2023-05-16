@@ -47,13 +47,16 @@
                 <li class="list-group-item"><i class="fa-brands fa-linkedin"></i></li>
                 <li class="list-group-item"><i class="fa-brands fa-github"></i></li>
               </ul>
-            
+
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#loginModal"> Iniciar Sesión</button>
+
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#logout">Salir</button>
+
           </div>
         </div>
       </nav>
     </section>
-
-
     <body>
 
     <!-- Sección redes -->
@@ -122,6 +125,7 @@
     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d108707.75905752485!2d-60.67663718715819!3d-31.630633892653485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684189079511!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <br>
+    <h5>
     <label for="">Usuario</label>
     <input type="text" placeholder="Nombre de usuario">
 
@@ -129,9 +133,54 @@
     <input type="password" placeholder="Contraseña">
 
     <button type="submit"> Enviar</button>
-
+    </h5>
     </section>
 
+    <!-- Modal -->
+
+    <!-- Modal Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFecha" class="form-label">Fecha</label>
+            <input type="date" class="form-control" id="exampleFecha">
+          </div>
+            
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+        
+      </div>
+    </form>
+
+    </div>
+  </div>
+</div>
+
+    <!--JavaScrip Bundle with Popper Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     </body>
